@@ -181,7 +181,13 @@ $(document).ready(function () {
                 }
             }
             p1Choice = "";
+            firstPlayer.set({
+                playerOneChoice: ""
+            });
             p2Choice = "";
+            secondPlayer.set({
+                playerTwoChoice: ""
+            });
             $("#win-status-display-text").text(winStatus);
             $("#win-status-display").modal("show");
         };
