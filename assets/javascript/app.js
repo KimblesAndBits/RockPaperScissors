@@ -180,10 +180,10 @@ $(document).ready(function () {
                     ties++;
                 }
             }
-            $("#win-status-display-text").text(winStatus);
-            $("#win-status-display").modal("show");
             p1Choice = "";
             p2Choice = "";
+            $("#win-status-display-text").text(winStatus);
+            $("#win-status-display").modal("show");
         };
     };
 
