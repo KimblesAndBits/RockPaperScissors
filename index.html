@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel=stylesheet href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=New+Rocker&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
@@ -26,13 +27,15 @@
 <body>
     <div class="content-wrapper">
         <div class=row id="name-input">
-            <form>
-                <div class="form-group" id="name-input">
-                    <label for="player-name">What is your name?</label>
-                    <input type="text" class="form-control" id="player-name" placeholder="Enter your name...">
-                </div>
-                <button type="button" class="btn btn-primary" id="name-submit">Submit</button>
-            </form>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group" id="name-input">
+                        <label for="player-name">What is your name?</label>
+                        <input type="text" class="form-control" id="player-name" placeholder="Enter your name...">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="name-submit">Submit</button>
+                </form>
+            </div>
         </div>
         <div class="row">
             <div class=col-md-3>
@@ -73,16 +76,28 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <h3>Wins:</h3>
-                    <h4 id="wins"></h4>
+                    <div class="card win-display">
+                        <div class="card-body">
+                            <h5 class="card-title">Wins</h5>
+                            <p class="card-text win-text" id="wins"></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h3>Ties:</h3>
-                    <h4 id="ties"></h4>
+                    <div class="card win-display">
+                        <div class="card-body">
+                            <h5 class="card-title">Ties</h5>
+                            <p class="card-text win-text" id="ties"></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h3>Losses:</h3>
-                    <h4 id="losses"></h4>
+                    <div class="card win-display">
+                        <div class="card-body">
+                            <h5 class="card-title">Losses</h5>
+                            <p class="card-text win-text" id="losses"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
