@@ -91,6 +91,7 @@ $(document).ready(function () {
         };
         showPlayers();
         compareChoices();
+        displayWins();
     });
 
     secondPlayer.on("value", function (snap) {
@@ -102,6 +103,7 @@ $(document).ready(function () {
         };
         showPlayers();
         compareChoices();
+        displayWins();
     });
 
     chatLog.on("value", function (snap) {
@@ -182,6 +184,12 @@ $(document).ready(function () {
             p1Choice = "";
             p2Choice = "";
         };
+    };
+
+    function displayWins() {
+        $("#wins").text(wins);
+        $("#ties").text(ties);
+        $("#losses").text(losses);
     };
 
     function nameAssign() {
