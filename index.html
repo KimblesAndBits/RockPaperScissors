@@ -27,7 +27,7 @@
     <div class="content-wrapper">
         <div class=row id="name-input">
             <form>
-                <div class="form-group">
+                <div class="form-group" id="name-input">
                     <label for="player-name">What is your name?</label>
                     <input type="text" class="form-control" id="player-name" placeholder="Enter your name...">
                 </div>
@@ -57,6 +57,20 @@
                     <div class="card-body">
                         <h3 class="card-text">Scissors!</h3>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Wins:</h3>
+                    <h4 id="wins"></h4>
+                </div>
+                <div class="col-md-4">
+                    <h3>Ties:</h3>
+                    <h4 id="ties"></h4>
+                </div>
+                <div class="col-md-4">
+                    <h3>Losses:</h3>
+                    <h4 id="losses"></h4>
                 </div>
             </div>
         </div>
