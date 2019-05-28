@@ -2,3 +2,29 @@
     width: 95%;
     margin: auto;
 }
+
+#chat-display {
+    border: solid 1px #16161D;
+    width: 100%;
+    height: 15rem;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    border: 1px solid #16161D;
+    border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: grey;  
+    border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: darkgrey;  
+    }
