@@ -180,7 +180,8 @@ $(document).ready(function () {
                     ties++;
                 }
             }
-            alert(winStatus);
+            $("#win-status-display-text").text(winStatus);
+            $("#win-status-display").modal("show");
             p1Choice = "";
             p2Choice = "";
         };
